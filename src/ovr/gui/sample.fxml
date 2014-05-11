@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+      fx:controller="ovr.gui.Controller">
+    <children>
+        <Label text="Port: 9876"/>
+        <HBox spacing="0">
+            <children>
+                <Label text="Result: "/>
+                <Label fx:id="result"/>
+            </children>
+        </HBox>
+        <HBox spacing="5.0">
+            <children>
+                <Label text="X"/>
+                <HBox spacing="0.0">
+                    <children>
+                        <Button fx:id="xLeft" onAction="#onXLeft" text="&lt;"/>
+                        <TextField fx:id="xField" text="0"/>
+                        <Button fx:id="xRight" onAction="#onXRight" text="&gt;"/>
+                    </children>
+                </HBox>
+                <TextField fx:id="xStep" text="1"/>
+            </children>
+        </HBox>
+        <HBox spacing="5.0">
+            <children>
+                <Label text="Y"/>
+                <HBox spacing="0.0">
+                    <children>
+                        <Button fx:id="yLeft" onAction="#onYLeft" text="&lt;"/>
+                        <TextField fx:id="yField" text="0"/>
+                        <Button fx:id="yRight" onAction="#onYRight" text="&gt;"/>
+                    </children>
+                </HBox>
+                <TextField fx:id="yStep" text="1"/>
+            </children>
+        </HBox>
+        <HBox spacing="5.0">
+            <children>
+                <Label text="Z"/>
+                <HBox spacing="0.0">
+                    <children>
+                        <Button fx:id="zLeft" onAction="#onZLeft" text="&lt;"/>
+                        <TextField fx:id="zField" text="0"/>
+                        <Button fx:id="zRight" onAction="#onZRight" text="&gt;"/>
+                    </children>
+                </HBox>
+                <TextField fx:id="zStep" text="1"/>
+            </children>
+        </HBox>
+
+        <HBox spacing="5.0">
+            <children>
+                <Label text="Alpha"/>
+                <HBox spacing="0.0">
+                    <children>
+                        <Button fx:id="alphaLeft" onAction="#onAlphaLeft" text="&lt;"/>
+                        <TextField fx:id="alphaField" text="0"/>
+                        <Button fx:id="alphaRight" onAction="#onAlphaRight" text="&gt;"/>
+                    </children>
+                </HBox>
+                <TextField fx:id="alphaStep" text="1"/>
+            </children>
+        </HBox>
+        <HBox spacing="5.0">
+            <children>
+                <Label text="Betta"/>
+                <HBox spacing="0.0">
+                    <children>
+                        <Button fx:id="bettaLeft" onAction="#onBettaLeft" text="&lt;"/>
+                        <TextField fx:id="bettaField" text="0"/>
+                        <Button fx:id="bettaRight" onAction="#onBettaRight" text="&gt;"/>
+                    </children>
+                </HBox>
+                <TextField fx:id="bettaStep" text="1"/>
+            </children>
+        </HBox>
+        <HBox spacing="5.0">
+            <children>
+                <Label text="Zetta"/>
+                <HBox spacing="0.0">
+                    <children>
+                        <Button fx:id="zettaLeft" onAction="#onZettaLeft" text="&lt;"/>
+                        <TextField fx:id="zettaField" text="0"/>
+                        <Button fx:id="zettaRight" onAction="#onZettaRight" text="&gt;"/>
+                    </children>
+                </HBox>
+                <TextField fx:id="zettaStep" text="1"/>
+            </children>
+        </HBox>
+        <Button text="undefined" onAction="#onUndefinedClick"/>
+    </children>
+</VBox>
